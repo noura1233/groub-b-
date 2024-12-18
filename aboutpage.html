@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="about_style.css">
+
+    
+</head>
+<body>
+    <section id="header1">
+        <a href="#"><img src="logo 2.jpg" class="logo" width="100"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  class="active" href="#index.html"> Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">about</a></li>
+                
+                <form id="search-form" action="#" method="GET">
+                    <input type="text" id="search-input" placeholder="Search..." required>
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </form>
+    
+    
+            </ul>
+    
+        </div>
+        
+    </section>
+    <header>
+        <div class="header-container">
+            <img src="MC.jpg" alt="Vintage Clothes" class="header-image">
+            <div class="header-content">
+                <h1>Welcome to Vintage Treasures</h1>
+                <p>Discover old and fashionable vintage clothes</p>
+            </div>
+        </div>
+    </header>
+    
+
+   
+
+    <section id="about">
+        <img src="about.jpg">
+        <h2>About Vintage Treasures </h2>
+        <p>Vintage clothing represents fashion from a previous era. These items are often unique, sustainable, and tell a story. Whether it’s a 1950s dress or a 1980s leather jacket, vintage fashion allows you to stand out while appreciating timeless designs.</p>
+        <section id="video" style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="flex: 1; padding-right: 20px;">
+                <h2>Explore Vintage Fashion</h2>
+                <p>Watch this video to discover timeless vintage styles and trends that stand out in any era.</p>
+            </div>
+            <div style="flex: 1;">
+                <iframe 
+                    width="100%" 
+                    height="300" 
+                    src="https://www.youtube.com/embed/zG8E9k9WZxk
+                    title="Vintage shopping" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div> 
+        </section>
+        
+    </section>
+
+    <section id="styles">
+        <h2>Popular Vintage Styles that are trending right now</h2>
+       <img src="2000.jpg">
+        <ul>
+            <li>2000s - baby Tees</li>
+            <li>2000s - Low rise jeans</li>
+            <li>2000s - cargo pants</li>
+            <li>2000s -butterfly clips & assecerioes</li>
+        </ul>
+    </section>
+    <section id="browse-vintage">
+        <h2>Browse Vintage Clothes</h2>
+        <button id="toggle-browse">Show Clothes</button>
+        <div id="vintage-clothes-list" style="display: none; margin-top: 10px;">
+            <ul>
+                <li>Classic 1950s Floral Dress</li><img src="1950.jpg">
+                <li>1980s Leather Jacket</li><img src="1980.jpg">
+                <li>1970s High-Waisted Jeans</li><img src="19700.jpg">
+                <li>Retro Graphic Tees</li><img src="retro.jpg">
+                <li>1960s Polka Dot Skirt</li><img src="polka.jpg">
+            </ul>
+        </div>
+    </section>
+    <hr>
+
+    
+    <script>
+        const toggleButton = document.getElementById('toggle-browse');
+        const clothesList = document.getElementById('vintage-clothes-list');
+    
+        toggleButton.addEventListener('click', () => {
+            if (clothesList.style.display === 'none') {
+                clothesList.style.display = 'block';
+                toggleButton.textContent = 'Hide Clothes';
+            } else {
+                clothesList.style.display = 'none';
+                toggleButton.textContent = 'Show Clothes';
+            }
+        });
+    </script>
+    <footer class="section-p1">
+
+        <div class="col">
+            <img class="logo" src="logo 2.jpg">
+            <h4> Contact</h4>
+            <p><strong>Address:</strong> 72086 Ankunding Terrace, Apt. 141, 49182, Hobartburgh, Arkansas,
+              United States</p>
+            <p><strong>Phone:</strong> 086-2567-346</p>
+            <p><strong>Hours:</strong> 9:00 - 17-00, Mon-Fri</p>
+            <div class="follow">
+                <h4> Follow us </h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col">
+        <h4>About</h4>
+        <a href="#">About us </a>
+        <a href="#">contact us </a>
+        <a href="#">Terms & conditions </a>
+        <a href="#">Privacy Policy </a>
+    </div>
+    <div class="col Install">
+        <h4> Install App</h4>
+        <P>  From Google Play</P>
+        <div class="row">
+            <img  src="google.jpg" alt="">
+        </div>
+        <P>  Secured payment products </P>
+        <img class="logo"  src="pay.jpg">
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Vinatge Treasures,All Right Reserved</p>
+    
+    </div>
+    
+        
+    </footer>
+
+  
+   
+
+
+    
+</body>
+</html>
+
