@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     
-    <link rel="stylesheet" href="about style.css">
+    <link rel="stylesheet" href="about_style.css">
 
     
 </head>
@@ -157,32 +157,10 @@
     </footer>
 
   
-    <script>
-        
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    
-       
-        window.addEventListener('DOMContentLoaded', () => {
-            const header = document.querySelector('header h1');
-            header.style.opacity = '0';
-            setTimeout(() => {
-                header.style.transition = 'opacity 1.5s ease-in';
-                header.style.opacity = '1';
-            }, 300);
-        });
-    </script>
-    
-</body>
-</html>
+   
+
 
     
 </body>
 </html>
-</html>
+
